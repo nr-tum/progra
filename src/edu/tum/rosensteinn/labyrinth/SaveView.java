@@ -53,6 +53,9 @@ public class SaveView extends WidgetView {
         java.io.File file = new java.io.File(Main.savesFolder, filename);
         java.util.Properties props = level.save(null);
         try {
+            if (!file.getParentFile().isDirectory()) {
+                file.getParentFile().mkdirs();
+            }
             props.store(new java.io.FileOutputStream(file), "Comment Here");  // todo: Spezieller Kommentar hier?
         }
         catch (java.io.IOException e) {
