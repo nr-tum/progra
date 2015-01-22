@@ -1,2 +1,6 @@
 # tum-labyrinth
-TU Munich - Programming Project WiSe 2014/2015 for the 1st Semester
+
+This game is the result of a programming project of the first semester
+at the Technical University in Munich, Germany.
+
+![Preview Image][preview.png]
